@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: "14"
       - name: Configure AWS credentials from Test account
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::381492231164:role/GithubActionsRole-us-west-2
           aws-region: us-west-2
